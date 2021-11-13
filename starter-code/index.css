@@ -419,7 +419,7 @@ textarea {
 @media (min-width: 45em){
 
     .line{
-        height: 0.1px;
+        height: 1px;
         width: 100%;
         background:hsl( var(--clr-white) / 0.25);
         margin-right: -2.5rem;
