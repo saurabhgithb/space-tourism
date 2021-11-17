@@ -50,7 +50,6 @@
 /* Reset               */
 /* ------------------- */
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
 *,
@@ -82,7 +81,7 @@ p {
     font-weight: 400;
 }
 
-/* set up the body */
+
 body {
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
@@ -97,14 +96,14 @@ body {
     overflow-x: hidden;
 }
 
-/* make images easier to work with */
+
 img,
 picutre {
     max-width: 100%;
     display: block;
 }
 
-/* make form elements easier to work with */
+
 input,
 button,
 textarea,
@@ -112,7 +111,6 @@ select {
     font: inherit;
 }
 
-/* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {  
   *,
   *::before,
@@ -129,7 +127,7 @@ select {
 /* Utility classes     */
 /* ------------------- */
 
-/* general */
+/* General */
 
 .flex {
     display: flex;
@@ -145,7 +143,7 @@ select {
     display: block;
 }
 
-.flow > *:where(:not(:first-child)) {
+.flow > * + * {
     margin-top: var(--flow-space, 1rem);
 }
 
@@ -186,7 +184,7 @@ select {
     transform: translateY(0);
 }
 
-/* colors */
+/* Colors */
 
 .bg-dark { background-color: hsl( var(--clr-dark) );}
 .bg-light { background-color: hsl( var(--clr-light) );}
@@ -196,7 +194,7 @@ select {
 .text-light { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
 
-/* typography */
+/* Typography */
 
 .ff-serif { font-family: var(--ff-serif); } 
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
@@ -239,7 +237,7 @@ select {
 
 
 /* ------------------- */
-/* Compontents         */
+/* Components         */
 /* ------------------- */
 
 .large-button {
@@ -461,6 +459,7 @@ body {
     background-size: cover;
     background-position: bottom center;
 }
+
 /* home */
 .home {
     background-image: url(./assets/home/background-home-mobile.jpg);
@@ -516,7 +515,6 @@ body {
 } 
 
 /* technology */
-
 .technology {
     background-image: url(./assets/technology/background-technology-mobile.jpg);
 }
