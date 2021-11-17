@@ -16,8 +16,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,20 +28,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Homepage](./screenshots/Screenshot-index.png)
+![Destination-page](./screenshots/Screenshot-destination.png)
+![Crew-page](./screenshots/Screenshot-crew.png)
+![Technology-page](./screenshots/Screenshot-technology.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Website solution URL here](https://github.com/saurabhisdev/space-tourism.git)
+- Live Site URL: [live site URL here](https://saurabhisdev.github.io/space-tourism/)
 
 ## My process
 
@@ -53,60 +46,144 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS Utility Classes
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this section I’ll summarise what I’ve learnt from this Challenge.
 
-To see how you can add code snippets, see below:
+Resets:
+To avoid the unwanted inconsistencies due to default styles applied by the browser we must reset the styles that we may use.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+We applied the following resets initially:-
+
+- On All Selectors
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+- On Body
+```css
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-dark) );
+    line-height: 1.5;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    
+    overflow-x: hidden;
+}
+```
+- Image and picture
+```css
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+```
+- On Form elements
+```css
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Custom Properties:
+Custom Properties helped me to maintain my code in long run. It allow us update a property at one place and changes reflects in entire document.
+
+Used for:-
+- font-size
+- font-color 
+- font-family
+
+Utility Classes:
+We have adopted a utility-first approach to CSS. Utility classes made out development a lot faster and easier. No doubt I am in love with them.
+
+Most used Utility classes:-
+- Flex and grid
+- Font color, size and family
+- Bg-Color, Text-Color, letter-spacing
+- Container[To apply space left and right]
+- Screen Reader only[To hide text from screen reader]
+- Flow[To add spacing]
+- numbered-title ...
+
+e.g. A utility class to add spacing between the content evenly.
+```css
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+```
+
+Components:
+Below are the components that allowed us to write DRY code:-
+- logo
+- primary-navigation
+- mobile-nav-toggle
+- large-button
+- underline-indicators
+- dot-indicators
+- number-indicators ...
+
+e.g. Component for Explore Button
+```css
+.large-button {
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
+}
+```
+Responsiveness:
+
+Layout:
+
+HTML Attributes:
+
+Functionality:
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In future projects-
+- I will be focusing more on using Javascript and React.
+- Commanding more on CSS flex and CSS grids.
+- Learn to use mordern CSS properties
+and much more...
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Mordern CSS reset](https://piccalil.li/blog/a-modern-css-reset/) - This id an amazing article that helped me to understand the CSS resets and their use. Also to use them in a mordern way.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - I think everyone has heard about it. Helped me understand basics of the new concepts.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Saurabh Singh](https://saurabhisdev.github.io/space-tourism/)
+- Frontend Mentor - [@saurabhisdev](https://www.frontendmentor.io/profile/saurabhisdev)
+- Twitter - [@sauravsinghbsr](https://twitter.com/sauravsinghbsr)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to thank my teacher [Kevin Powell](https://twitter.com/KevinJPowell) who guided me on this wonderful project on topic "Space Tourism Website". Secondly I would like to thanks [Frontend Mentor](https://www.frontendmentor.io/) and [Scrimba](https://scrimba.com/) who provided all the resources required for building the website.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+This project helped me in doing a lot of research on various concepts which ultimately increased my understanding of HTML and CSS. I came to knew about so many new things.
+
