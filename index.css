@@ -366,6 +366,14 @@ select {
 
 @media (min-width: 45em) {
     
+   /* .line{
+        height: 1px;
+        width: 100%;
+        background:hsl( var(--clr-white) / 0.25);
+        margin-right: -2.5rem;
+        z-index: 3000;
+     } */
+    
      .primary-header::after {
          content: '';
          display: block;
@@ -740,7 +748,7 @@ body {
     }
 
 
-    .grid-container--crew > picture {
+    .grid-container--technology > picture {
         max-width: 90%;
     }
 
