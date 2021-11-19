@@ -167,15 +167,15 @@ Responsiveness:
 Layout:
 
 HTML Attributes:
--data-*** (custom Attribute)
--aria-controls
--aria-expanded
--aria-hidden
--aria-selected
--aria-label
--srcset
--tabindex
--role
+- data-*** (custom Attribute)
+- aria-controls
+- aria-expanded
+- aria-hidden
+- aria-selected
+- aria-label
+- srcset
+- tabindex
+- role
 
 Semantic flow
 ```html
@@ -210,10 +210,10 @@ Semantic flow
 
 
 Elements required for Functionality:
--nav and navToggle
--tablist and tabs
--targetTab, targetPanel and targetImage
--tabContainer and mainContainer
+- nav and navToggle
+- tablist and tabs
+- targetTab, targetPanel and targetImage
+- tabContainer and mainContainer
 ```js
 const targetTab = e.target;
     const targetPanel = targetTab.getAttribute("aria-controls");
@@ -224,9 +224,9 @@ const targetTab = e.target;
 ```
 
 Functions:
--changeTabFocus
--hideContent
--showContent
+- changeTabFocus
+- hideContent
+- showContent
 ```js
 function hideContent(parent, content) {
     parent
