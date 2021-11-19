@@ -153,14 +153,91 @@ e.g. Component for Explore Button
     text-decoration: none;
 }
 ```
-Responsiveness:
+New CSS Functions:
+-Clamp
+-aspect ratio
+-minmax
+-vmin & vmax
+-order
+-backdrop-filter
 
+Responsiveness:
+-ch(character width)
+-media queries (35rem,45rem)
 Layout:
 
 HTML Attributes:
+-data-*** (custom Attribute)
+-aria-controls
+-aria-expanded
+-aria-hidden
+-aria-selected
+-aria-label
+-srcset
+-tabindex
+-role
 
-Functionality:
+Semantic flow
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img>
+        <nav></nav>
+    </header>
+
+    <main>
+        <h1></h1>
+        <div class="dot-indicators"></div>
+        <article class="destination-info">
+            <header>
+                <h2></h2>
+                <p></p>
+            </header>
+        </article>
+        <picture></picture>
+    </main>
+</body>
+
+</html>
+```
+
+
+Elements required for Functionality:
+-nav and navToggle
+-tablist and tabs
+-targetTab, targetPanel and targetImage
+-tabContainer and mainContainer
+```js
+const targetTab = e.target;
+    const targetPanel = targetTab.getAttribute("aria-controls");
+    const targetImage = targetTab.getAttribute("data-image");
+    
+    const tabContainer = targetTab.parentNode;
+    const mainContainer = tabContainer.parentNode;
+```
+
+Functions:
+-changeTabFocus
+-hideContent
+-showContent
+```js
+function hideContent(parent, content) {
+    parent
+        .querySelectorAll(content)
+        .forEach((item) => item.setAttribute("hidden", true));
+}
+
+function showContent(parent, content) {
+     parent.querySelector(content).removeAttribute('hidden');
+}
+```
 
 ### Continued development
 
