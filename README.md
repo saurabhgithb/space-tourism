@@ -154,16 +154,16 @@ e.g. Component for Explore Button
 }
 ```
 New CSS Functions:
--Clamp
--aspect ratio
--minmax
--vmin & vmax
--order
--backdrop-filter
+- Clamp
+- aspect ratio
+- minmax
+- vmin & vmax
+- order
+- backdrop-filter
 
 Responsiveness:
--ch(character width)
--media queries (35rem,45rem)
+- ch(character width)
+- media queries (35rem,45rem)
 Layout:
 
 HTML Attributes:
