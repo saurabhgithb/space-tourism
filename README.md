@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Website solution URL here](https://github.com/saurabhisdev/space-tourism.git)
-- Live Site URL: [live site URL here](https://saurabhisdev.github.io/space-tourism/)
+- Solution URL: [Website solution URL here](https://github.com/saurabhh-github/space-tourism.git)
+- Live Site URL: [live site URL here](https://saurabhh-github.github.io/space-tourism/)
 
 ## My process
 
