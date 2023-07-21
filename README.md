@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Website solution URL here](https://github.com/saurabhh-github/space-tourism.git)
-- Live Site URL: [live site URL here](https://saurabhh-github.github.io/space-tourism/)
+- Solution URL: [Website solution URL here](https://github.com/saurabh-gih/space-tourism.git)
+- Live Site URL: [live site URL here](https:/saurabh-gih.github.io/space-tourism/)
 
 ## My process
 
@@ -254,9 +254,9 @@ and much more...
 
 ## Author
 
-- Website - [Saurabh Singh](https://saurabhisdev.github.io/space-tourism/)
+- Website - [Saurabh Singh](https://saurabh-gih.github.io/space-tourism/)
 - Frontend Mentor - [@saurabhisdev](https://www.frontendmentor.io/profile/saurabhisdev)
-- Twitter - [@sauravsinghbsr](https://twitter.com/sauravsinghbsr)
+- Twitter - [@saurabh__twt](https://twitter.com/saurabh__twt)
 
 ## Acknowledgments
 
